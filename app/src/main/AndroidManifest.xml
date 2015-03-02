@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.codepath.apps.mysimpletweets"
+    package="com.codepath.apps.twitterplusfragments"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -10,8 +10,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:name=".TwitterApplication"
@@ -42,7 +41,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="mpsimpletweets"
+                    android:host="twitterplusfragments"
                     android:scheme="oauth" />
             </intent-filter>
         </activity>
@@ -51,8 +50,8 @@
             android:label="@string/title_activity_timeline" >
         </activity>
         <activity
-            android:name=".ComposeTweetActivity"
-            android:label="@string/title_activity_compose_tweet" >
+            android:name=".models.ProfileActivity"
+            android:label="@string/title_activity_profile" >
         </activity>
     </application>
 
